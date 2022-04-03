@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ base_style }}">
+    <link rel="stylesheet" href="{{ content_style }}">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <ul class="nav navbar">
+            <li class="navbar-brand">
+                <b>LOGOS</b>
+            </li>
+            <li class="nav-item">
+                <form class="search">
+                    <input type="text" placeholder="Введите адрес доставки">
+                    <button>
+                        <img src="{{ search_svg }}" alt="search">
+                    </button>
+                    }
+                </form>
+            </li>
+            <li class="nav-item">
+                <a href="tel:+7(917)5105759" class="number-link">
+                    <img src="{{ calling_svg }}" alt="phone-number">
+                    <span class="text-number">
+                        <p>Контакты:</p>
+                        <h3>+7 (917) 510-57-59</h3>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" id="basket">
+                <button id="dropbtn" type="button">
+                    <b>Корзина</b>
+                    <p class="vertical-line"></p>
+                    <p id="number">4</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="product-menu">
+        <ul class="nav">
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Холодные закуски
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Горячие закуски
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Мясные блюда
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Супы
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Рыбные блюда
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Гриль меню
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Фирменные блюда
+                    </p>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="product-button">
+                    <p class="text-button">
+                        Напитки
+                    </p>
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<footer>
+    <ul class="nav navbar">
+        <li class="nav-item">
+            <a href="#" class="nav-link footer-link">
+                <p>О ресторане</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link footer-link">
+                <p>Условия доставки</p>
+            </a>
+        </li>
+        <li class="nav-item" id="scrol">
+            <button class="scrol-icon" onclick="scrolBtn()">
+                <img src="{{ up_svg }}" alt="up-arrowd">
+            </button>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link footer-link">
+                <p>Возврат товара</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link footer-link">
+                <p>Акции</p>
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+{#<script type="text/javascript" src="../static/js/index.js"></script>#}
+</body>
+</html>

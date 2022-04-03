@@ -1,0 +1,204 @@
+:root {
+  --back-color: #403C3B;
+  --elemnet-color: #504B4A;
+  --text-color: #CFCFCF;
+  --back-gadient: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../font/Gilroy-Light.otf") format("truetype");
+  font-style: normal;
+  font-size: medium;
+}
+input:focus, button:focus, a:focus {
+  outline: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@media png {
+  * {
+    max-width: 1444px;
+    width: 100%;
+  }
+}
+* button, * input {
+  border: none;
+}
+* .nav {
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
+* a:hover {
+  text-decoration: none;
+}
+* p {
+  font-family: Gilroy;
+  color: var(--text-color);
+  margin: 0;
+}
+* h3 {
+  margin: 0;
+}
+
+body {
+  margin-top: 30px;
+  margin-left: calc(50% - 722px);
+  margin-right: calc(50% - 722px);
+  background: var(--back-color);
+}
+
+header > .menu .navbar-brand {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+header > .menu .nav-item {
+  margin: 0 30px;
+}
+header > .menu .nav-item > .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+header > .menu .nav-item > .search > input {
+  height: 100%;
+  background-color: #504B4A;
+  padding: 8px;
+  display: block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+header > .menu .nav-item > .search > input::placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+header > .menu .nav-item > .search > button {
+  height: 100%;
+  background-color: #504B4A;
+  padding: 8px;
+  display: block;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+header > .menu .nav-item > .number-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+}
+header > .menu .nav-item > .number-link > img {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  border: 0 solid;
+  border-radius: 50%;
+  background: var(--back-gadient);
+}
+header > .menu .nav-item > .number-link > .text-number {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+header > .menu .nav-item > .number-link > .text-number > all {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  color: #CFCFCF;
+}
+header > .menu .nav-item > .number-link > .text-number > h3 {
+  font-size: 15px;
+  color: #FFFFFF;
+}
+header > .menu .nav-item > button#dropbtn {
+  background: var(--back-gadient);
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  border-radius: 10px;
+  align-content: center;
+}
+header > .menu .nav-item > button#dropbtn > b {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  align-self: center;
+}
+header > .menu .nav-item > button#dropbtn > p.vertical-line {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 26px;
+  transform: rotate(90deg);
+  align-self: center;
+}
+header > .menu .nav-item > button#dropbtn > p#number {
+  width: 24px;
+  height: 24px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #403C3B;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 5px;
+}
+header > .product-menu > .nav {
+  justify-content: space-between;
+}
+header > .product-menu > .nav .nav-item > .product-button {
+  background: var(--back-color);
+}
+header > .product-menu > .nav .text-button {
+  margin: 0;
+}
+
+footer > .nav {
+  align-items: center;
+}
+footer > .nav .nav-item > .footer-link > p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+footer > .nav .nav-item#scrol > button.scrol-icon {
+  background: var(--back-color);
+}
+footer > .nav .nav-item#scrol > button.scrol-icon > img {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF 100%;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=index.css.map */

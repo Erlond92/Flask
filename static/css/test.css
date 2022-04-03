@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/static/font/Gilroy-Light.otf);
+}
+
+input:focus, button:focus{
+    outline: none !important;
+}
+
+body {
+    background-color: #403C3B;
+    margin-left: calc(50% - 722px);
+    margin-right: calc(50% - 722px);
+}
+
+.nav {
+    max-width: 1444px;
+    margin: 23px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand > b {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+}
+
+.nav-item > .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item#basket {
+    margin-left: 30px;
+}
+
+.search {
+    background-color: #504B4A;
+    max-width: 500px;
+    min-width: 350px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+.search > input {
+    border: none;
+    padding: 8px;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.search > button {
+    border: none;
+    margin: 0;
+    background-color: #504B4A;
+    padding: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+input {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #CFCFCF;
+}
+
+input::placeholder {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #CFCFCF;
+}
+
+.phone-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-number {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+}
+
+.number-link .nav-link {
+    padding: 10px;
+}
+
+.number-link > p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #CFCFCF;
+    margin: 0;
+}
+
+.number-link > h3 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+button#dropbtn > b{
+    padding: 0;
+    margin: 0;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    align-content: center;
+}
+
+button#dropbtn {
+    border: none;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+button#dropbtn > b {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+p.vertical-line {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 26px;
+    transform: rotate(90deg);
+    align-self: center;
+}
+
+p#number {
+    width: 24px;
+    height: 24px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #403C3B;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+footer > .nav {
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    float: left;
+}
+
+button.scrol-icon {
+    background: #403C3B 100%;
+}
+
+button.scrol-icon > img {
+    width: 30px;
+    height: 30px;
+    /*transform: rotate(270deg);*/
+    background: #FFFFFF 100%;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+li.nav-item > a.footer-link {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.map {
+    margin: 0 auto;
+    max-width: 1444px;
+    width: 100%;
+}
+
+.content {
+    height: 1000px;
+}
