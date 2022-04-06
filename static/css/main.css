@@ -1,3 +1,32 @@
+:root {
+  --back-color: #403C3B;
+  --elemnet-color: #504B4A;
+  --text-color: #CFCFCF;
+  --back-gadient: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+}
 
+@font-face {
+  font-family: Gilroy;
+  src: url("../font/Gilroy-Light.otf") format("truetype");
+  font-style: normal;
+  font-size: medium;
+}
+main {
+  margin-top: 25px;
+}
+main > h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+main > .vertical {
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 385px);
+}
 
 /*# sourceMappingURL=main.css.map */

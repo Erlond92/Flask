@@ -1,5 +1,31 @@
-{% extends base.html %}
-
+{% extends "base.html" %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/index.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/card.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static" , filename="/css/main.css") }}">
+{% endblock %}
 {% block content %}
-
+    <h2>ХОЛОДНЫЕ ЗАКУСКИ</h2>
+    <div class="vertical">
+    {% for card in cards %}
+        <div class="card">
+            <img src="{{ card.img }}" alt="lamp">
+            <div class="container">
+                <div class="name">
+                    <h4>{{ card.name }}</h4>
+                    <p>{{ card.mass }}</p>
+                </div>
+                <div class="description">
+                    <p>{{ card.description }}</p>
+                </div>
+                <div class="buy">
+                    <p class="price">{{ card.price }}</p>
+                    <button>
+                        <p>В корзину</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
 {% endblock %}

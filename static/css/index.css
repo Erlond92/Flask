@@ -19,12 +19,6 @@ input:focus, button:focus, a:focus {
   margin: 0;
   padding: 0;
 }
-@media png {
-  * {
-    max-width: 1444px;
-    width: 100%;
-  }
-}
 * button, * input {
   border: none;
 }
@@ -179,6 +173,10 @@ header > .product-menu > .nav .text-button {
   margin: 0;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
 footer > .nav {
   align-items: center;
 }
