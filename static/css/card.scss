@@ -1,0 +1,121 @@
+:root {
+  --back-color: #403C3B;
+  --elemnet-color: #504B4A;
+  --text-color: #CFCFCF;
+  --back-gadient: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../font/Gilroy-Light.otf") format("truetype");
+  font-style: normal;
+  font-size: medium;
+}
+input:focus, button:focus, a:focus {
+  outline: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  button, input {
+    border: none;
+  }
+}
+
+main {
+  .card {
+    border: 0 solid;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    max-width: 385px;
+
+    > img {
+      width: 100%;
+      border: 0 solid;
+      border-top: 10px;
+    }
+
+    > .container {
+      max-width: 385px;
+      padding: 0;
+      margin: 14px 20px;
+      display: grid;
+      grid-gap: 15px;
+
+      > .name {
+        display: flex;
+        max-width: 345px;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+
+        > h4 {
+          margin: 0;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+
+        > p {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          color: #FFFFFF;
+        }
+      }
+
+      > .description {
+
+        > p {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 17px;
+          color: #CFCFCF;
+          word-break: break-word;
+        }
+      }
+
+      > .buy {
+        display: flex;
+        max-width: 345px;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+
+        > p {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          color: #FFFFFF;
+        }
+
+        > button {
+          border: 0 solid;
+          border-radius: 10px;
+          padding: 13px;
+          background: var(--back-gadient);
+
+          > p {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

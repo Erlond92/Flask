@@ -5,22 +5,24 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def main():
+    card_dict = {
+        "img": url_for("static", filename="/img/lamp.png"),
+        "name": "Ягненок",
+        "mass": "Вес: 225 г",
+        "description": """Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком""",
+        "price": "620 ₽"}
     card_list = [
         {
-            "img": url_for("static", filename="/img/lamp.png"),
-            "name": "Ягненок",
-            "mass": "Вес: 225 г",
-            "description": """Фаршированный гречневой кашей,
-                        курагой, апельсином и зеленым яблоком""",
-            "price": "620 ₽"
+            "name": "ХОЛОДНЫЕ ЗАКУСКИ",
+            "list": [card_dict for _ in range(4)]
         },
         {
-            "img": url_for("static", filename="/img/lamp.png"),
-            "name": "Ягненок",
-            "mass": "Вес: 225 г",
-            "description": """Фаршированный гречневой кашей,
-                            курагой, апельсином и зеленым яблоком""",
-            "price": "620 ₽"
+            "name": "ГОРЯЧИЕ ЗАКУСКИ",
+            "list": [card_dict for _ in range(4)]
+        },
+        {
+            "name": "МЯСНЫЕ БЛЮДА",
+            "list": [card_dict for _ in range(4)]
         }
     ]
     if request.method == "GET":

@@ -24,7 +24,8 @@ input:focus, button:focus, a:focus {
 }
 * .nav {
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  align-items: stretch;
 }
 * a:hover {
   text-decoration: none;
@@ -172,7 +173,10 @@ header > .product-menu > .nav .text-button {
   margin: 0;
 }
 
-#footer > .nav-item > .footer-link > p {
+ul#footer {
+  align-items: center;
+}
+ul#footer > .nav-item > .footer-link > p {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
@@ -180,10 +184,10 @@ header > .product-menu > .nav .text-button {
   line-height: 24px;
   color: #FFFFFF;
 }
-#footer > li#scrol > button {
+ul#footer > .scrol > button {
   background: var(--back-color);
 }
-#footer > li#scrol > button > img {
+ul#footer > .scrol > button > img {
   width: 30px;
   height: 30px;
   background: #FFFFFF 100%;
@@ -191,4 +195,4 @@ header > .product-menu > .nav .text-button {
   border-radius: 50%;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */

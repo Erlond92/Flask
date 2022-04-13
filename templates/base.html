@@ -20,7 +20,6 @@
                     <button>
                         <img src="{{ url_for("static", filename="/img/search.svg") }}" alt="search">
                     </button>
-                    }
                 </form>
             </li>
             <li class="nav-item">
@@ -106,35 +105,33 @@
     {% block content %}
     {% endblock %}
 </main>
-<footer>
-    <ul class="nav navbar">
-        <li class="nav-item">
-            <a href="#" class="nav-link footer-link">
-                <p>О ресторане</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link footer-link">
-                <p>Условия доставки</p>
-            </a>
-        </li>
-        <li class="nav-item" id="scrol">
-            <button class="scrol-icon" onclick="scrolBtn()">
-                <img src="{{ url_for("static", filename="/img/up.svg") }}" alt="up-arrowd">
-            </button>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link footer-link">
-                <p>Возврат товара</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link footer-link">
-                <p>Акции</p>
-            </a>
-        </li>
-    </ul>
-</footer>
+<ul id="footer" class="nav navbar">
+  <li class="nav-item">
+    <a href="#" class="nav-link footer-link">
+      <p>О ресторане</p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="#" class="nav-link footer-link">
+      <p>Условия доставки</p>
+    </a>
+  </li>
+  <li class="nav-item" id="scrol">
+    <button>
+      <img src="{{ url_for("static", filename="../static/img/up.svg") }}" alt="up-arrowd">
+    </button>
+  </li>
+  <li class="nav-item">
+    <a href="#" class="nav-link footer-link">
+      <p>Возврат товара</p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="#" class="nav-link footer-link">
+      <p>Акции</p>
+    </a>
+  </li>
+</ul>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
