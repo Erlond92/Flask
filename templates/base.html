@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     {% block stylesheet %}
     {% endblock %}
@@ -116,9 +116,9 @@
       <p>Условия доставки</p>
     </a>
   </li>
-  <li class="nav-item" id="scrol">
-    <button>
-      <img src="{{ url_for("static", filename="../static/img/up.svg") }}" alt="up-arrowd">
+  <li class="nav-item scrol">
+    <button onclick="scrolBtn()">
+      <img src="../static/img/up.svg" alt="up-arrowd">
     </button>
   </li>
   <li class="nav-item">
@@ -135,5 +135,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../static/js/slick.min.js"></script>
+<script src="../static/js/index.js"></script>
 </body>
 </html>

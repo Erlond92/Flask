@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/index.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/card.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static" , filename="/css/login.css") }}">
+{% endblock %}
+
+{% block content %}
+    {{ form.hidden_tag() }}
+    <form action="" class="login-from" method="post">
+        {{ form.email(class="form-control", placeholder="Введите почту") }}
+        {{ form.password(class="form-control", placeholder="Введите пароль") }}
+        {{ form.submit(class="finish") }}
+    </form>
+    <p style="text-align: center; margin: 20px; font-size: 35px">{{ message }}</p>
+{% endblock %}

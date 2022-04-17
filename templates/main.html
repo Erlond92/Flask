@@ -8,8 +8,8 @@
     {% for item in cards %}
         <h2>{{ item.name }}</h2>
         <div class="product-line">
-        {% for card in item.list %}
-            <div class="card">
+            {% for card in item.list %}
+            <div class="card element">
                 <img src="{{ card.img }}" alt="lamp">
                 <div class="container">
                     <div class="name">
@@ -27,8 +27,8 @@
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
         </div>
     {% endfor %}
 {% endblock %}

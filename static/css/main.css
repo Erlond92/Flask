@@ -12,11 +12,18 @@
   font-size: medium;
 }
 main {
-  position: absolute;
   margin-top: 25px;
 }
-main > h2 {
-  position: absolute;
+main > .product-line {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main > .product-line > .vertical-line {
+  height: 4px;
+  transform: rotate(90deg);
+}
+main > .product-line > h2 {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
@@ -24,10 +31,4 @@ main > h2 {
   line-height: 39px;
   color: #FFFFFF;
 }
-main > .product-line {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows: repeat(4, 1fr);
-}
 
-/*# sourceMappingURL=main.css.map */

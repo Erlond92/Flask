@@ -1,2 +1,3 @@
 Flask==1.1.4
 appmap==1.5.1
+SQLAlchemy==1.4.35
