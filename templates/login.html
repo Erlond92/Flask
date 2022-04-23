@@ -13,5 +13,6 @@
         {{ form.password(class="form-control", placeholder="Введите пароль") }}
         {{ form.submit(class="finish") }}
     </form>
-    <p style="text-align: center; margin: 20px; font-size: 35px">{{ message }}</p>
+    <p style="text-align: center; margin: 10px; font-size: 35px">{{ message }}</p>
+    <center><a href="{{ url_for('registration') }}" style="text-align: center">Регистрация</a></center>
 {% endblock %}

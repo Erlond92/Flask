@@ -3,7 +3,7 @@ from data.users import User
 
 
 def main():
-    db_session.global_init("db/test.sqlite")
+    db_session.global_init("db/users.sqlite")
     user = User()
     user.name = "1254"
     user.about = "1234"

@@ -12,7 +12,7 @@
     <div class="menu">
         <ul class="nav navbar">
             <li class="navbar-brand">
-                <b>LOGOS</b>
+                <a href="{{ url_for('index') }}" style="color: #fff;">LOGOS</a>
             </li>
             <li class="nav-item">
                 <form class="search">
@@ -33,9 +33,13 @@
             </li>
             <li class="nav-item" id="basket">
                 <button id="dropbtn" type="button">
-                    <b>Корзина</b>
-                    <p class="vertical-line"></p>
-                    <p id="number">4</p>
+                    {% if current_user.is_authenticated %}
+                        <b>Корзина</b>
+                        <p class="vertical-line"></p>
+                        <p id="number">4</p>
+                    {% else %}
+                        <a href="{{ url_for('login') }}" style="color: #FFFFFF;">Вход</a>
+                    {% endif %}
                 </button>
             </li>
         </ul>
