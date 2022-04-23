@@ -1,0 +1,51 @@
+main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+main > .login-from {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background: #504B4A;
+  border: 0 solid;
+  border-radius: 10px;
+  max-width: 600px;
+  display: grid;
+  grid-gap: 10px;
+}
+main > .login-from > input {
+  height: 100%;
+  background-color: #504B4A;
+  padding: 8px;
+  display: block;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+main > .login-from > input::placeholder {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+main > .login-from > .finish::placeholder {
+  color: var(--back-color);
+}
+main > .login-from > input:focus {
+  box-shadow: none;
+  color: var(--text-color);
+  border: 1px solid;
+  text-decoration: none;
+  background-color: #504B4A;
+}
+main > .login-from > .finish {
+   background-color: #FFFFFF;
+}
