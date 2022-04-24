@@ -1,0 +1,97 @@
+.basket-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.basket {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.vertical-line {
+    width: 33px;
+    height: 4px;
+    background: #618967;
+    transform: rotate(90deg);
+}
+
+.cart-list {
+    margin: 15px 0;
+}
+
+.cart-item {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item > h2 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cart-item > p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 14px;
+    color: #A6A7AB;
+}
+
+.button-k {
+    display: flex;
+}
+
+.button-k > p {
+    margin: 0 5px;
+    height: 26px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.button-k > #del {
+    margin: 0 5px;
+    width: 27px;
+    height: 27px;
+    border: 0 solid;
+    border-radius: 50%;
+    background: #72A479
+ }
+
+.button-k > #add {
+    margin: 0 5px;
+    width: 27px;
+    height: 27px;
+    border: 0 solid;
+    border-radius: 50%;
+    background: #72A479
+}
+
+.button-k > #all {
+    margin: 0 5px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background: var(--back-color);
+}

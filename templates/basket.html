@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/index.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="/css/card.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static" , filename="/css/basket.css") }}">
+{% endblock %}
+
+{% block content %}
+<div class="basket-name">
+    <div class="vertical-line"></div>
+    <h2 class="basket">Корзина</h2>
+</div>
+<ul class="cart-list">
+    {% for product in basket %}
+        <li class="cart-item">
+            <h2>{{ product.name[0] }}</h2>
+            <p>{{ product.description[0] }}</p>
+            <div class="button-k">
+                <button onclick="addBasket(1, {{ product.id }})" id="add">+</button>
+                <p>{{ product.k }}</p>
+                <button onclick="addBasket(0, {{ product.id }})" id="del">-</button>
+                <p class="price">{{ product.k * product.price[0] }}</p>
+                <button onclick="addBasket(3, {{ product.id }})" id="all">Удалить</button>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
