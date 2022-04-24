@@ -14,14 +14,14 @@
             <li class="navbar-brand">
                 <a href="{{ url_for('index') }}" style="color: #fff;">LOGOS</a>
             </li>
-            <li class="nav-item">
-                <form class="search">
-                    <input type="text" placeholder="Введите адрес доставки">
-                    <button>
-                        <img src="{{ url_for("static", filename="/img/search.svg") }}" alt="search">
-                    </button>
-                </form>
-            </li>
+{#            <li class="nav-item">#}
+{#                <form class="search">#}
+{#                    <input type="text" placeholder="Введите адрес доставки">#}
+{#                    <button>#}
+{#                        <img src="{{ url_for("static", filename="/img/search.svg") }}" alt="search">#}
+{#                    </button>#}
+{#                </form>#}
+{#            </li>#}
             <li class="nav-item">
                 <a href="tel:+7(917)5105759" class="number-link">
                     <img src="{{ url_for("static", filename="/img/Calling.svg") }}" alt="phone-number">
@@ -33,10 +33,10 @@
             </li>
             <li class="nav-item" id="basket">
                 <button id="dropbtn" type="button">
-                    {% if current_user.is_authenticated %}
-                        <b>Корзина</b>
+                    {% if auth %}
+                        <a href="{{ url_for("basket") }}">Корзина</a>
                         <p class="vertical-line"></p>
-                        <p id="number">4</p>
+                        <p id="number">{{ basket_k }}</p>
                     {% else %}
                         <a href="{{ url_for('login') }}" style="color: #FFFFFF;">Вход</a>
                     {% endif %}
@@ -67,41 +67,41 @@
                     </p>
                 </button>
             </li>
-            <li class="nav-item">
-                <button class="product-button">
-                    <p class="text-button">
-                        Супы
-                    </p>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="product-button">
-                    <p class="text-button">
-                        Рыбные блюда
-                    </p>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="product-button">
-                    <p class="text-button">
-                        Гриль меню
-                    </p>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="product-button">
-                    <p class="text-button">
-                        Фирменные блюда
-                    </p>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="product-button">
-                    <p class="text-button">
-                        Напитки
-                    </p>
-                </button>
-            </li>
+{#            <li class="nav-item">#}
+{#                <button class="product-button">#}
+{#                    <p class="text-button">#}
+{#                        Супы#}
+{#                    </p>#}
+{#                </button>#}
+{#            </li>#}
+{#            <li class="nav-item">#}
+{#                <button class="product-button">#}
+{#                    <p class="text-button">#}
+{#                        Рыбные блюда#}
+{#                    </p>#}
+{#                </button>#}
+{#            </li>#}
+{#            <li class="nav-item">#}
+{#                <button class="product-button">#}
+{#                    <p class="text-button">#}
+{#                        Гриль меню#}
+{#                    </p>#}
+{#                </button>#}
+{#            </li>#}
+{#            <li class="nav-item">#}
+{#                <button class="product-button">#}
+{#                    <p class="text-button">#}
+{#                        Фирменные блюда#}
+{#                    </p>#}
+{#                </button>#}
+{#            </li>#}
+{#            <li class="nav-item">#}
+{#                <button class="product-button">#}
+{#                    <p class="text-button">#}
+{#                        Напитки#}
+{#                    </p>#}
+{#                </button>#}
+{#            </li>#}
         </ul>
     </div>
 </header>
@@ -136,10 +136,10 @@
     </a>
   </li>
 </ul>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="../static/js/slick.min.js"></script>
-<script src="../static/js/index.js"></script>
+<script src="../static/js/slick.min.js" type="text/javascript"></script>
+<script src="../static/js/index.js" type="text/javascript"></script>
 </body>
 </html>

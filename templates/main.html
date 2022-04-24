@@ -6,7 +6,11 @@
 {% endblock %}
 {% block content %}
     {% for item in cards %}
-        <h2>{{ item.name }}</h2>
+        <div class="product-name">
+            <div class="vertical-line"></div>
+            <h2>{{ item.name }}</h2>
+        </div>
+
         <div class="product-line">
             {% for card in item.list %}
             <div class="card element">
@@ -21,14 +25,13 @@
                     </div>
                     <div class="buy">
                         <p class="price">{{ card.price }}</p>
-                        <button onclick="addBasket()">
+                        <button onclick="addBasket(1, {{ card.id }})">
                             <p>В корзину</p>
                         </button>
                     </div>
                 </div>
             </div>
             {% endfor %}
-        </div>
         </div>
     {% endfor %}
 {% endblock %}

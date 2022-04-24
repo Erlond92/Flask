@@ -1,17 +1,3 @@
-from data import db_session
-from data.users import User
+import requests
 
-
-def main():
-    db_session.global_init("db/users.sqlite")
-    user = User()
-    user.name = "1254"
-    user.about = "1234"
-    user.email = "1264@gmail.com"
-    db_sess = db_session.create_session()
-    db_sess.add(user)
-    db_sess.commit()
-
-
-if __name__ == "__main__":
-    main()
+print(requests.get("http://127.0.0.1:5000/api/1/12"))
