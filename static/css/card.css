@@ -23,6 +23,8 @@ input:focus, button:focus, a:focus {
   border: none;
 }
 
+
+
 main .card {
   border: 0 solid;
   border-radius: 10px;
@@ -36,8 +38,7 @@ main .card > img {
 }
 main .card > .container {
   max-width: 385px;
-  padding: 0;
-  /*margin: 14px 20px;*/
+  padding: 10px;
   display: grid;
   grid-gap: 15px;
 }

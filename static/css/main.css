@@ -14,7 +14,29 @@
 main {
   margin-top: 25px;
 }
+main > .product-name {
+  display: flex;
+  flex-direction: row;
+}
+main > .product-name > h2 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  align-self: center;
+}
+main > .product-name > .vertical-line {
+  width: 33px;
+  height: 4px;
+  background: #618967;
+  transform: rotate(90deg);
+  align-self: center;
+}
 main > .product-line {
+  margin: 15px 0;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
